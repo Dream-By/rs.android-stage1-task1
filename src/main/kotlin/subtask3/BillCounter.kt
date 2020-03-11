@@ -1,6 +1,6 @@
-package task3
+package subtask3
 
-class T3BillCounter {
+class BillCounter {
 
     // TODO: Complete the following function
     // The output could be "Bon Appetit" or the string with number(e.g "10")

@@ -20,7 +20,7 @@ set DEFAULT_JVM_OPTS="-Xmx64m"
 if defined JAVA_HOME goto findJavaFromJavaHome
 
 set JAVA_EXE=java.exe
-%JAVA_EXE% -version >NUL 2>&task1
+%JAVA_EXE% -version >NUL 2>&subtask1
 if "%ERRORLEVEL%" == "0" goto init
 
 echo.
@@ -56,7 +56,7 @@ set CMD_LINE_ARGS=
 set _SKIP=2
 
 :win9xME_args_slurp
-if "x%~task1" == "x" goto execute
+if "x%~subtask1" == "x" goto execute
 
 set CMD_LINE_ARGS=%*
 
@@ -75,8 +75,8 @@ if "%ERRORLEVEL%"=="0" goto mainEnd
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
-if  not "" == "%GRADLE_EXIT_CONSOLE%" exit task1
-exit /b task1
+if  not "" == "%GRADLE_EXIT_CONSOLE%" exit subtask1
+exit /b subtask1
 
 :mainEnd
 if "%OS%"=="Windows_NT" endlocal

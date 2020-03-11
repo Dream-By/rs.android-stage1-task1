@@ -1,6 +1,6 @@
-package task5
+package subtask5
 
-class T5HighestPalindrome {
+class HighestPalindrome {
 
     // TODO: Complete the following function
     fun highestValuePalindrome(n: Int, k: Int, digitString: String): String {

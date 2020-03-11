@@ -1,6 +1,6 @@
-package task1
+package subtask1
 
-class T1Array {
+class HappyArray {
 
     // TODO: Complete the following function
     fun convertToHappy(sadArray: IntArray): IntArray {
