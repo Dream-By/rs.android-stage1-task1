@@ -27,7 +27,7 @@ class Task1BillCounterTest {
 
     @Test
     fun testTask3BillCounter4() {
-        val billArray = intArrayOf(3, 10, 2, 9, 18, 25 ,45)
+        val billArray = intArrayOf(3, 10, 2, 9, 18, 25, 45)
         assertEquals("22", counter.calculateFairlySplit(billArray, 4, 69).toLowerCase())
     }
 }
