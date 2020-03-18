@@ -12,6 +12,17 @@ repositories {
     mavenCentral()
 }
 
+test {
+    afterSuite { desc, result ->
+    if (!desc.parent)
+        println("${result.resultType} " +
+            "(${result.testCount} tests, " +
+            "${result.successfulTestCount} successes, " +
+            "${result.failedTestCount} failures, " +
+            "${result.skippedTestCount} skipped)")
+    }
+}
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     testCompile group: 'junit', name: 'junit', version: '1.5.1'
